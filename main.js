@@ -221,7 +221,7 @@ var AudioService = /** @class */ (function () {
     }
     AudioService.prototype.loadAudioFile = function (fileName) {
         var _this = this;
-        var basePath = "assets/sfx/";
+        var basePath = "/assets/sfx/";
         return fetch(basePath + fileName)
             .then(function (response) { return response.arrayBuffer(); })
             .then(function (buffer) {
